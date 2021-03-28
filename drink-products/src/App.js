@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import data from './shared/data.json';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {Container,Navbar} from 'reactstrap';
+import Products from './components/products';
+
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      products: data
+    }
+  }
+  render() {
+    return (
+      <div className="App">
+        <Container>
+          <Navbar>
+          test
+          </Navbar>
+        </Container>
+        <Container>
+          <Products products={this.state.products}></Products>
+        </Container>
+
+      </div>
+    );
+  }
 }
+
 
 export default App;
