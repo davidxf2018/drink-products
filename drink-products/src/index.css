@@ -27,3 +27,14 @@ code {
   font-weight: 700;
   font-size: 1.25rem;
 }
+
+.product .on-sale {
+  position: absolute;
+  background-color: #af0016;
+  color : #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+}

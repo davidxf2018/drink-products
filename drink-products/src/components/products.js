@@ -2,13 +2,23 @@ import React, {Component} from 'react'
 import {Row, Col} from 'reactstrap';
 
 export default class Products extends Component {
+
+  renderSale(product){
+    if(product.isSale){
+      return (
+        <div className="on-sale">On Sale</div>
+      );
+    }
+  }
+
   render(){
     return(
-      <div ClassName="products">
+      <div className="products">
         <Row>
           {this.props.products.map(product => (
             <Col key={product.index} md="3" sm="12">
               <div className = "product py-3 mb-4">
+                {this.renderSale(product)}
                 <div>
                   <img src={"/assets/images/" + product.productImage} alt={product.productName}></img>
                 </div>
