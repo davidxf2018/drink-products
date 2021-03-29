@@ -45,7 +45,7 @@ code {
   justify-content: space-between;
   border-bottom: 1px solid #d1d2d1;
   margin: 1rem 0;
-  padding: 0 1rem 1rem;
+  padding: 0 0 1rem 1rem;
 }
 .filter .filter-count {
   font-weight: 700;
@@ -53,4 +53,28 @@ code {
 
 .filter .filter-by select {
   margin-left: 1rem;
+  min-height: 2.5rem;
+  min-width: 100px;
+  outline: 0;
+}
+
+/**** Search *****/
+.search {
+  padding:1rem 0;
+  /* text-align: right; */
+}
+
+.search input {
+  width: 100%;
+  padding-left: 0.5rem;
+  min-height:2.5rem;
+  outline: 0;
+}
+.search .search-icon {
+  position:absolute;
+  font-size: 1.5rem;
+  color: #4c8251;
+  margin-left: -2rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
 }
