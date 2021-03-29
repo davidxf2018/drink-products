@@ -17,7 +17,7 @@ class App extends Component {
       productName : ""
     }
   }
-
+  //function to filter product based on dropdown
   filterProducts = (e) => {
     console.log(e.target);
     const value = e.target.value;
@@ -36,18 +36,21 @@ class App extends Component {
       })
     }
   }
+
+  //function to search for products
   searchProducts = (e) => {
     const text = e.target.value;
-    console.log('search',text);
+
+    //only start to search when number of characters is larger than 3
     if (text === "" || text.length < 3){
       this.setState({
         products:data
       })
     }
     else {
-      console.log('text ready to go');
       this.setState({
         products: data.filter(
+          // search for product name and type fields
           (product) => (product.productName.toLowerCase().includes(text.toLowerCase()) || product.type.toLowerCase().includes(text.toLowerCase()))
         )
       })

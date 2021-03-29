@@ -3,6 +3,7 @@ import {Row, Col} from 'reactstrap';
 
 export default class Products extends Component {
 
+  //add on sale label
   renderSale(product){
     if(product.isSale){
       return (
