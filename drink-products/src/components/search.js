@@ -7,7 +7,7 @@ export default class Search extends Component{
   render() {
     return (
       <Row className="search">
-        <Col className = "md-3 sm-12 offset-md-9">
+        <Col xl="3" lg ="4" md="6" sm="12" className = " offset-xl-9 offset-lg-8 offset-md-6">
             <input type="text" placeholder="Search products" onChange={this.props.searchProducts}/>
              <FontAwesomeIcon icon={faSearch} className="search-icon" />
         </Col>

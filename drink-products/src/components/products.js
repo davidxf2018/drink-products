@@ -16,7 +16,7 @@ export default class Products extends Component {
       <div className="products">
         <Row>
           {this.props.products.map(product => (
-            <Col key={product.index} md="3" sm="12">
+            <Col key={product.index} xl="3" lg="4" md="6" sm="12">
               <div className = "product py-3 mb-4">
                 {this.renderSale(product)}
                 <div>
