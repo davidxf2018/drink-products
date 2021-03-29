@@ -8,8 +8,8 @@ export default class Search extends Component{
     return (
       <Row className="search">
         <Col className = "md-3 sm-12 offset-md-9">
-            <input type="text" placeholder="Search products"/>
-             <FontAwesomeIcon icon={faSearch} className="search-icon"/>
+            <input type="text" placeholder="Search products" onChange={this.props.searchProducts}/>
+             <FontAwesomeIcon icon={faSearch} className="search-icon" />
         </Col>
       </Row>
     )
