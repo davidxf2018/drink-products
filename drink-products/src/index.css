@@ -43,6 +43,7 @@ code {
 .filter {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #d1d2d1;
   margin: 1rem 0;
   padding: 0 0 1rem 1rem;
