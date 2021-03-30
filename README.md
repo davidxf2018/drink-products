@@ -15,6 +15,13 @@ This project receives a json file containing drinks data as input and display pr
 
     ``` npm start ```
     
+## Unit Tests
+Enzyme is used for test. To run tests:
+
+``` npm test ```
+
+
+    
 ## Source files
 * Original json file is stored in ```/src/shared/data.json```
 * Product images are stored in ```assets/images/```
